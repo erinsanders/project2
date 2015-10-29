@@ -19,15 +19,22 @@
       height: 200px;
       width: 300px;
       margin: 2px 4px;
-      opacity: .7; }
-      transition: 400ms 50ms;
+      opacity: .7; 
     }
 
-    &:hover img:not(:hover) {
-      opacity: 0.5;
-      filter: saturate(50%);
-      transition-delay: 0ms;
-    }
+div {
+    display: none;
+    border:1px solid #000;
+    height:30px;
+    width:290px;
+    margin-left:10px;
+}
+
+a:hover + div {
+    display: block;
+    color:yellow;
+}
+
 </style>
 
 
@@ -44,10 +51,13 @@
     <img src="images/unnamed-2.jpg" width="300px" />
     <img src="images/unnamed-3.jpg" width="300px" />
     <img src="images/unnamed-4.jpg" width="300px" />
-    <img src="images/unnamed-1 (1).jpg" width="300px"/>
+    <img src="images/unnamed-11.jpg" width="300px"/>
     <img src="images/IMG_4939.jpg" width="300px" />
     <img src="images/IMG_4939.jpg" width="300px" />
   </figure>
 </div>
+
+<a><img src="images/IMG_4811.jpg"></a>
+<div>WHY IS HTIS NOT WORKING</div>
 
 </html>
