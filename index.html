@@ -1,35 +1,43 @@
 <!DOCTYPE>
 <html>
+
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+  
 <div class='wrap'>
   <div class='top'>Erin Sanders</div>
-  <p class='big'>LIFE STARTS HERE. LIFE STARTED THERE.</p>
+  <p class='big'><a href="instapage.html">LIFE STARTS HERE.</a> LIFE STARTED THERE.</p>
+  
   <section>
     <p>CAMERA.</p>
     <p>RECIPES.</p>
     <p>GOOD PEOPLE.</p>
   </section>
 </div>
+
+
+
 </html>
 
 <style>
-@font-face {
-  font-family: 'Code';
-  src: url("https://dl.dropboxusercontent.com/u/144150383/CodeLightDemo.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
+
+<h1>Erin Sanders</h1>
 
 @font-face {
-  font-family: 'Code';
-  src: url("https://dl.dropboxusercontent.com/u/144150383/CodeRegDemo.woff") format("woff");
+  font-family: 'Amatic SC', cursive;
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Code';
-  src: url("https://dl.dropboxusercontent.com/u/144150383/CodeBoldDemo.woff") format("woff");
-  font-weight: 700;
+  font-family: 'Amatic SC', cursive;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+ font-family: 'Amatic SC', cursive;
+  font-weight: normal;
   font-style: normal;
 }
 * {
@@ -64,14 +72,21 @@ body {
   line-height: .9;
   padding-bottom: 100px;
 }
+
+a.big {
+    text-decoration: none;
+}
+
 .big:after {
   content: '';
   clear: both;
   display: table;
 }
+
 .big:first-line {
   display: none;
 }
+
 .top {
   display: block;
   font-size: 19px;
@@ -82,14 +97,21 @@ body {
   border-bottom: 2.5px solid #555;
 } 
 .top:after {
-  content: 'GET TO KNOW ME';
+  content: 'Get To Know Me';
   float: right;
-}
+  }
+
+  a:hover {
+    color: pink;
+
+  }
+
 section {
   color: #434343;
   font-size: 18px;
   border-top: 2px solid #434343;
 }
+
 section p {
   width: 33.333%;
   float: left;
@@ -98,6 +120,7 @@ section p {
   min-height: 1px;
   white-space: wrap;
 }
+
 section p:first-child {
   font-weight: 300;
 }
