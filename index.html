@@ -1,38 +1,112 @@
 <!DOCTYPE>
 <html>
-
-<head>
-  <title>Life Starts Here</title>
-</head>
-
-<body>
-
-<div class="life">
-<h1>LIFE<br> 
-    STARTS<br>
-    HERE.
-  </h1> 
+<div class='wrap'>
+  <div class='top'>Erin Sanders</div>
+  <p class='big'>LIFE STARTS HERE. LIFE STARTED THERE.</p>
+  <section>
+    <p>CAMERA.</p>
+    <p>RECIPES.</p>
+    <p>GOOD PEOPLE.</p>
+  </section>
 </div>
+</html>
 
-<div class="join">
-  <h6>JOIN ME</h6>
-</div>
+<style>
+@font-face {
+  font-family: 'Code';
+  src: url("https://dl.dropboxusercontent.com/u/144150383/CodeLightDemo.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
 
-<div class="title">
-  <h2>ERIN</h2>
-</div>
+@font-face {
+  font-family: 'Code';
+  src: url("https://dl.dropboxusercontent.com/u/144150383/CodeRegDemo.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
-<div class="nav">
-    <ul class="links">
-      <li>WAKE THE EFF UP</li>
-      <li>COOK SOME DAMN EGGS</LI>
-      <li>WORK IT OUT</LI>
-      <li>RUN IT OUT</li>
-      <li>WHIP UP SOME SHIT</li>
-      <li>SLEEP AND REPEAT</li>
-      <li class="start">START OVER</li>
-    </ul>
+@font-face {
+  font-family: 'Code';
+  src: url("https://dl.dropboxusercontent.com/u/144150383/CodeBoldDemo.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+body {
+  background: #000;
+  margin: 6em 0;
+}
+.wrap {
+  max-width: 680px;
+  margin: 0px auto;
+  font-family: 'Code';
+}
+.wrap:after, section:after {
+  content: '';
+  display: table;
+  clear: both
+} 
+.big {
+  font-size: 170px;
+  color: #ddd;
+  text-align: center;
+  display: block;
+  font-weight: 300;
+  line-height: .9;
+  padding-bottom: 100px;
+}
+.big:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.big:first-line {
+  display: none;
+}
+.top {
+  display: block;
+  font-size: 19px;
+  padding: 10px 20px;
+  color: #555;
+  letter-spacing:2px;
+  font-weight: 400;
+  border-bottom: 2.5px solid #555;
+} 
+.top:after {
+  content: 'GET TO KNOW ME';
+  float: right;
+}
+section {
+  color: #434343;
+  font-size: 18px;
+  border-top: 2px solid #434343;
+}
+section p {
+  width: 33.333%;
+  float: left;
+  line-height: 1.7;
+  padding: 10px;
+  min-height: 1px;
+  white-space: wrap;
+}
+section p:first-child {
+  font-weight: 300;
+}
+section p:nth-child(2) {
+  font-weight: 400;
+  padding-top: 15px;
+}
+section p:nth-child(3) {
+  font-weight: 700;
+}
 
-</body>
-
-  </html>
+</style>
